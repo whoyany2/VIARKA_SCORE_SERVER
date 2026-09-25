@@ -2,6 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /app
 COPY server.py /app/server.py
+COPY assets /app/assets
 
 ENV PORT=8765
 ENV VIARKA_SCORE_DB=/data/viarka_score.db
